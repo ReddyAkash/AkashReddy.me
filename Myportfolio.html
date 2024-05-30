@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Akash Reddy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    #main {
+        margin-left: 0;
+        padding-top: 150px; /* Add padding to avoid content overlap */
+    }
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0;
+            padding-top: 200px; /* Adjust padding for smaller screens */
+        }
+    }
+
+    .header-content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Center text horizontally */
+        margin-top: 20px;
+        position: relative; /* Add relative positioning */
+    }
+
+        .header-content1 img {
+            margin-top: 20px; /* Adjust margin as needed */
+            display: block;
+            max-height: 500px; /* Max height for image */
+            width: auto;
+        }
+
+    .image-fade {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%; /* Adjust height for fading effect */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        z-index: 1; /* Ensure it overlays the image */
+    }
+
+    .w3-card {
+        border-radius: 10px; /* Make the corners round */
+        border: 1px solid #ddd; /* Add border */
+        margin: 8px; /* Add some margin between card views */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add box shadow for depth */
+        transition: box-shadow 0.3s ease;
+    }
+
+        .w3-card h3 {
+            background-color: #f1f1f1; /* Add background color for heading */
+            padding: 10px; /* Add padding for heading */
+            border-top-left-radius: 10px; /* Adjust border radius for heading */
+            border-top-right-radius: 10px; /* Adjust border radius for heading */
+            margin: 0; /* Remove default margin */
+        }
+
+        .w3-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Adjust box shadow on hover */
+        }
+
+    
+
+
+    .typing {
+        border-right: .1em solid #fff;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: black;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Styling for education details */
+    .w3-container {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+        .w3-container h5 {
+            margin-top: 0;
+        }
+
+        .w3-container p {
+            margin-bottom: 0;
+        }
+
+    /* Margin between education details */
+    .w3-margin-bottom {
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .header-title {
+        font-size: 2em;
+        color: white;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+            .nav-links a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out;
+            }
+
+            .nav-links a:hover::after {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+</style>
+<body class="w3-black">
+
+    <div class="header">
+        <div class="header-content">
+            <div class="header-title">Akash Reddy.</div>
+            <div class="nav-links">
+                <a href="#">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#photos">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-padding-large" id="main">
+        <header class="w3-container w3-padding-32 w3-black" id="home">
+            <div class="header-content1">
+                <h1 class="w3-jumbo"><span class="w3-hide-small">Hi I'm</span> Akash Reddy.</h1>
+                <p class="typing" id="typing-text"></p>
+                <div style="position: relative; display: inline-block;" class="image-container shaky-image">
+                    <img src="D:/itsme.png" alt="boy"  class="w3-image">
+                    <div class="image-fade"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">About</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>
+                I'm Akash Reddy, a 4th year student pursuing Mtech Integrated Software Engineering. With a solid foundation in software engineering principles, my passion lies in crafting immersive web experiences and developing innovative Android applications. Throughout my academic journey, I've honed my skills in web development and Android app development, leveraging technologies such as HTML, CSS, JavaScript, and Java to bring creative ideas to life. I thrive on challenges, constantly seeking opportunities to expand my knowledge and push the boundaries of what's possible in the digital realm. Let's connect and explore how my expertise can contribute to your projects and endeavors.
+            </p>
+
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">4+</span><br>
+                    Partners
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">3+</span><br>
+                    Projects Done
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">4+</span><br>
+                    Certifications
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">8.96</span><br>
+                    CGPA
+                </div>
+            </div>
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+
+            <!-- My Skills Section -->
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+                <h2 class="w3-text-light-grey">My Skills</h2>
+                <hr style="width:200px" class="w3-opacity">
+
+                <!-- Card Views Container -->
+                <div class="w3-row-padding">
+
+                    <!-- Technologies Card View -->
+                    <div class="w3-half w3-padding">
+                        <div class="w3-card w3-white w3-round-large">
+                            <h3><i class="fa fa-desktop"></i> Tech Stack</h3>
+                            <ul>
+                                <li>Web Development</li>
+                                <li>Android Development</li>
+                                <li>Machine Learning</li>
+                                <li>Data Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages Card View -->
+                    <div class="w3-half w3-padding">
+                        <div class="w3-card w3-white w3-round-large">
+                            <h3><i class="fa fa-code"></i> Programming Languages</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C,C++</li>
+                                <li>JavaScript</li>
+                                <li>Ruby</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tools Card View -->
+                    <div class="w3-half w3-padding">
+                        <div class="w3-card w3-white w3-round-large">
+                            <h3><i class="fa fa-wrench"></i> Tools</h3>
+                            <ul>
+                                <li>Git Hub</li>
+                                <li>Visual Studio Code</li>
+                                <li>Android Studio</li>
+                                <li>Hadoop</li>
+                                <li>AWS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills Card View -->
+                    <div class="w3-half w3-padding">
+                        <div class="w3-card w3-white w3-round-large">
+                            <h3><i class="fa fa-users"></i> Soft Skills</h3>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Teamwork</li>
+                                <li>Problem Solving</li>
+                                <li>Time Management</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <h3 class="w3-padding-16 w3-text-light-grey">My Education</h3>
+
+            <!-- Present Education -->
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h5 class="w3-opacity"><b>M.Tech Integrated Software Engineering</b></h5>
+                <p>Vellore Institute of Technology, Chennai, India</p>
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - Present</p>
+            </div>
+
+            <!-- 12th Grade -->
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h5 class="w3-opacity"><b>12th Grade</b></h5>
+                <p>Sri Viswasanthi Junior College, Vijayawada, Andhrapradesh</p>
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2021</p>
+                <p>Score: 95.6%</p>
+            </div>
+
+            <!-- 10th Grade -->
+            <div class="w3-container w3-card w3-white">
+                <h5 class="w3-opacity"><b>10th Grade</b></h5>
+                <p>Sri Chaitanya School, Dachepalli, Andhrapradesh</p>
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019</p>
+                <p>Score:95%</p>
+            </div>
+
+
+
+            <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+            <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+            <p>John Doe saved us from a web disaster.</p><br>
+
+            <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+            <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+            <p>No one is better than John Doe.</p>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-64 w3-content" id="photos">
+            <h2 class="w3-text-light-grey">My Photos</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="/w3images/wedding.jpg" style="width:100%">
+                    <img src="/w3images/rocks.jpg" style="width:100%">
+                    <img src="/w3images/sailboat.jpg" style="width:100%">
+                </div>
+
+                <div class="w3-half">
+                    <img src="/w3images/underwater.jpg" style="width:100%">
+                    <img src="/w3images/chef.jpg" style="width:100%">
+                    <img src="/w3images/wedding.jpg" style="width:100%">
+                    <img src="/w3images/p6.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            </div><br>
+            <p>Let's get in touch. Send me a message:</p>
+
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+        </div>
+
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const typingText = document.getElementById("typing-text");
+        const textArray = ["I am a developer.", "I am a web and app developer."];
+        let arrayIndex = 0;
+        let charIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                arrayIndex = (arrayIndex + 1) % textArray.length;
+            }
+
+            currentText = textArray[arrayIndex];
+            typingText.innerHTML = currentText.substring(0, charIndex) + '<span class="typing"></span>';
+
+            if (!isDeleting) {
+                if (charIndex < currentText.length) {
+                    charIndex++;
+                    setTimeout(typeEffect, 100);
+                } else {
+                    isDeleting = true;
+                    setTimeout(typeEffect, 2000);
+                }
+            } else {
+                if (charIndex > 0) {
+                    charIndex--;
+                    setTimeout(typeEffect, 50);
+                } else {
+                    setTimeout(typeEffect, 500);
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            typeEffect();
+        });
+    </script>
+
+</body>
+</html>
